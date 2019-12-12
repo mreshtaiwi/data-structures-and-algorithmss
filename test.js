@@ -75,9 +75,9 @@ const createList = (availableItems) => {
     { name: 'blueberries', available: false, }
   ];
   let available = [];
-  inventory.forEach(function(value,idx){
+  inventory.forEach(function (value, idx) {
     console.log(inventory[idx].available);
-    if(inventory[idx].available){
+    if (inventory[idx].available) {
       available.push(inventory[idx].name);
     }
   });
@@ -92,18 +92,36 @@ const output = [];
 const fizzbuzz = (arr) => {
   // Solution code here...
   let newarray = arr;
-  newarray.forEach(function (value,idx) {
+  newarray.forEach(function (value, idx) {
     if (value % 3 === 0 && value % 5 === 0) {
       output.push('Fizz Buzz');
-    }else if(value % 3 === 0){
+    } else if (value % 3 === 0) {
       output.push('Fizz');
-    }else if (value % 5 === 0) {
+    } else if (value % 5 === 0) {
       output.push('Buzz');
-    }else{
+    } else {
       output.push(value);
     }
   });
   console.log(output);
 };
 
-fizzbuzz(inputs);
+//fizzbuzz(inputs);
+
+
+// $(document).ready(function () {
+//   //jQuery code goes here!
+//   let liz = document.getElementsByTagName('li');
+//   console.log(liz);
+//   for (let i = 0; i < 100; i++) {
+//     liz[i].innerHTML = i;
+//   }
+//   for (let i = 0; i < liz.length; i++) {
+//    // console.log(liz[i].textContent);
+//   }
+//   var listitems = $('li');
+//   listitems.on('click', function(){
+//     console.log(this.textContent);
+//   });
+// });
+
