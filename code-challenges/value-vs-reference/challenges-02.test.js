@@ -12,6 +12,7 @@ const appendTheEnd = (str) => {
   // Solution code here...
   let newArray = str + ' The end.';
   return newArray;
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
