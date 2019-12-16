@@ -10,15 +10,16 @@ Then, write a function named speaker that takes in a string and a callback funct
 
 const greeting = (word) => {
   // Solution code here...
-  let result = word;
+  let result = word.toUpperCase();
   return result;
   //console.log(word.toUpperCase());
 };
 
 const speaker = (message, callback) => {
   // Solution code here...
-  let result = message.toUpperCase();
-  return result;
+  return callback(message);
+  // let result = message.toUpperCase();
+  // return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
