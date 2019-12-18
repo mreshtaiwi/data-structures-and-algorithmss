@@ -10,8 +10,11 @@ Write a function that appends ' The end.' to a string, and returns the modified 
 
 const appendTheEnd = (str) => {
   // Solution code here...
-  let newArray = str + ' The end.';
-  return newArray;
+  // let newArray = str + ' The end.';
+  // return newArray;
+  var strModified = str.concat(' The end.');
+  return strModified;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -31,6 +34,7 @@ const appendFirstToLast = (arr) => {
   // Solution code here...
   let newArray = arr;
   newArray.push(newArray[0]);
+
 };
 
 /* ------------------------------------------------------------------------------------------------
